@@ -5,7 +5,7 @@ require('dotenv').config()
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const corsOptions: CorsOptions = {
-    origin: "http://localhost:3000", // 允许所有来源，也可以设置为特定的URL或数组
+    origin: "http://121.4.254.104/", // 允许所有来源，也可以设置为特定的URL或数组
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
     optionsSuccessStatus: 204, // 对于预检请求的OPTIONS方法，返回状态码204
